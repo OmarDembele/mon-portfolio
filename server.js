@@ -4,10 +4,10 @@ const path = require('path');
 const app = express();
 
 // Pour servir les fichiers statiques à partir du dossier dist
-app.use(express.static(__dirname + '/dist/portfolio-omar'));
+app.use(express.static(__dirname + '/dist'));
 
 app.get('/*', function(req, res) {
-  res.sendFile('index.html', {root: '/dist/portfolio-omar/'});
+  res.sendFile('index.html', {root: '/dist/'});
 });
 
 // Démarrer le serveur sur le port défini par Heroku ou sur le port 8080
