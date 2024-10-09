@@ -1,0 +1,586 @@
+/* -------- WRAPPER DESIGN -------- */
+
+.container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* -------- FEATURED BOX -------- */
+.featured-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* -------- FEATURED TEXT BOX -------- */
+.featured-text{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    min-height: 80vh;
+    width: 90%;
+    padding-left: 5%;
+}
+
+.featured-text-card{
+    background: var(--second-color);
+    color: var(--color-white);
+    padding: 2%;
+    font-size: 10px;
+    border-radius: 5px;
+}
+
+.featured-name{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--text-color-second);
+    margin: 20;
+}
+
+.typedText{
+    text-transform: capitalize;
+    color: var(--text-color-third);
+}
+
+h5 span{
+    color: var(--text-color-third);
+}
+
+.featured-text-info{
+    font-size: 15px;
+    margin-bottom: 5%;
+    color: var(--text-color-second);
+}
+
+.featured-text-btn {
+    display: flex;
+    gap: 20px;
+}
+
+.featured-text-btn>.blue-btn {
+    background: var(--first-color);
+    color: var(--color-white);
+}
+
+.featured-text-btn>.blue-btn:hover {
+    background: var(--first-color-hover);
+}
+
+
+/*----------------FEATURED IMAGE BOX --------- */
+
+.featured-image{
+    display: flex;
+    justify-content: right;
+    width: 50%;
+    padding-right: 5%;
+}
+
+.image{
+    margin: auto 0;
+    border-radius: 40% 40% 47% 47%;
+    overflow: hidden;
+    animation: imgFloat 7s ease-in-out infinite;
+}
+
+@keyframes imgFloat {
+    50%{
+        transform: translateY(10px);
+        border-radius: 45% 55% 45% 55%;
+    }
+}
+
+.scroll-btn{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    translate: -50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 7%;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--text-color-second);
+    background: var(--color-white);
+    border-radius: 30px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.scroll-btn i{
+    font-size: 20px;
+}
+
+
+/*--------------- Data  -----------------------*/
+
+.project-card {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.card-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 300px;
+}
+
+.card-box img {
+    border-radius: 10px 10px 0 0;
+}
+
+.card-box span {
+    margin-top: 5%;
+    font-family: none;
+    font-weight: normal;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--second-color);
+}
+
+.card-box h3 {
+    padding: 3%;
+    font-size: 24px;
+}
+
+.card-box p {
+    padding: 1%;
+    color: black;
+    font-weight: 600;
+}
+
+.card-box h4 {
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 8%;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.card-box .btn {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card-box .full-width-btn:hover {
+    background: var(--second-color);
+}
+
+.project-image {
+    width: 100%;
+    height: 120px;
+    max-height: 250px; /* Limiter la hauteur maximale de l'image */
+    object-fit: cover; /* Garde l'image proportionnelle tout en la rognant si nécessaire */
+}
+  
+
+.full-width-btn {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+    background-color: white;
+    font-weight: 600;
+    color: black;
+    border: none;
+    border-radius: 0 0 8px 8px; /* Rounded corners for the bottom */
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/* -------- GLOBAL BUTTON DESIGN -------- */
+
+.btn {
+    font-weight: 500;
+    padding: 12px 20px;
+    background: #efefef;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn>i{
+    margin-left: 0%;
+}
+
+.btn:hover {
+    background: var(--second-color);
+    color: var(--color-white);   
+}
+
+i{
+    font-size: 16px;
+}
+
+
+
+
+
+/* --------------- RESPONSIVE PAGE 220px to 600px  -----------------------------------*/
+@media only screen and (min-width: 220px ) and (max-width: 600px ) {
+
+    /* -------- FEATURED BOX -------- */
+    .featured-box{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+    /* -------- FEATURED TEXT BOX -------- */
+    .featured-text{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        min-height: 60vh;
+        width: 90%;
+        padding-left: 5%;
+    }
+
+    h5{
+        font-size: 28px; 
+    }
+
+    h5 span{
+        font-size: 28px;
+        color: var(--text-color-third);
+    }
+
+    /*----------------FEATURED IMAGE BOX --------- */
+
+    .featured-image{
+        display: flex;
+        justify-content: right;
+        width: 90%;
+        padding-right: 5%;
+    }
+
+    .image{
+        margin: auto 0;
+        border-radius: 30% 0% 37% 37%;
+        overflow: hidden;
+        animation: imgFloat 7s ease-in-out infinite;
+    }
+
+    @keyframes imgFloat {
+        50%{
+            transform: translateY(5px);
+            border-radius: 35% 5% 25% 35%;
+        }
+    }
+
+    .scroll-btn{
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        translate: -50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        height: 7%;
+        gap: 5px;
+        text-decoration: none;
+        color: var(--text-color-second);
+        background: var(--color-white);
+        border-radius: 30px;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .scroll-btn i{
+        font-size: 20px;
+    }
+
+
+    /*--------------- Data  -----------------------*/
+
+    .project-card {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .card-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        background-color: var(--color-white);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        width: 400px;
+        margin-top: 5%;
+    }
+
+    .card-box img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card-box span {
+        margin-top: 5%;
+        font-family: none;
+        font-weight: normal;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--second-color);
+    }
+
+    .card-box h3 {
+        padding: 3%;
+        font-size: 24px;
+    }
+
+    .card-box p {
+        padding: 1%;
+        color: black;
+        font-weight: 600;
+    }
+
+    .card-box h4 {
+        text-align: center;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 8%;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .card-box .btn {
+        background-color: #007BFF;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .card-box .full-width-btn:hover {
+        background: var(--second-color);
+    }
+
+    .project-image {
+        width: 100%;
+        height: 120px;
+        max-height: 250px; /* Limiter la hauteur maximale de l'image */
+        object-fit: cover; /* Garde l'image proportionnelle tout en la rognant si nécessaire */
+    }
+    
+
+    .full-width-btn {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 100%;
+        background-color: white;
+        font-weight: 600;
+        color: black;
+        border: none;
+        border-radius: 0 0 8px 8px; /* Rounded corners for the bottom */
+        text-align: center;
+        cursor: pointer;
+    }
+
+}
+
+
+
+/* --------------- RESPONSIVE PAGE 601px to 768px  -----------------------------------*/
+@media only screen and (min-width: 601px ) and (max-width: 768px ) {
+
+    /* -------- FEATURED BOX -------- */
+    .featured-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+    /* -------- FEATURED TEXT BOX -------- */
+    .featured-text{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        min-height: 60vh;
+        width: 90%;
+        padding-left: 5%;
+    }
+
+    h5{
+        font-size: 28px; 
+    }
+
+    h5 span{
+        font-size: 28px;
+        color: var(--text-color-third);
+    }
+
+    /*----------------FEATURED IMAGE BOX --------- */
+
+    .featured-image{
+        display: flex;
+        justify-content: right;
+        width: 50%;
+        padding-right: 5%;
+    }
+    
+    .image{
+        margin: auto 0;
+        border-radius: 40% 40% 47% 47%;
+        overflow: hidden;
+        animation: imgFloat 7s ease-in-out infinite;
+    }
+    
+    @keyframes imgFloat {
+        50%{
+            transform: translateY(10px);
+            border-radius: 45% 55% 45% 55%;
+        }
+    }
+
+    .scroll-btn{
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        translate: -50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        height: 7%;
+        gap: 5px;
+        text-decoration: none;
+        color: var(--text-color-second);
+        background: var(--color-white);
+        border-radius: 30px;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .scroll-btn i{
+        font-size: 20px;
+    }
+
+
+    /*--------------- Data  -----------------------*/
+
+    .project-card {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .card-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        background-color: var(--color-white);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        width: 400px;
+        margin-top: 5%;
+    }
+
+    .card-box img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card-box span {
+        margin-top: 5%;
+        font-family: none;
+        font-weight: normal;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--second-color);
+    }
+
+    .card-box h3 {
+        padding: 3%;
+        font-size: 24px;
+    }
+
+    .card-box p {
+        padding: 1%;
+        color: black;
+        font-weight: 600;
+    }
+
+    .card-box h4 {
+        text-align: center;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 8%;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .card-box .btn {
+        background-color: #007BFF;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .card-box .full-width-btn:hover {
+        background: var(--second-color);
+    }
+
+    .project-image {
+        width: 100%;
+        height: 120px;
+        max-height: 250px; /* Limiter la hauteur maximale de l'image */
+        object-fit: cover; /* Garde l'image proportionnelle tout en la rognant si nécessaire */
+    }
+    
+
+    .full-width-btn {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 100%;
+        background-color: white;
+        font-weight: 600;
+        color: black;
+        border: none;
+        border-radius: 0 0 8px 8px; /* Rounded corners for the bottom */
+        text-align: center;
+        cursor: pointer;
+    }
+
+}
+
+
+

@@ -1,0 +1,62 @@
+<body>
+    
+    <div class="container">
+
+        <section class="featured-box" id="home">
+                
+            <div class="featured-text">
+                <div class="featured-text-card">
+                    <div>Omar Dembele</div>
+                </div>
+                <div class="featured-name">
+                    <h5>Bienvenue sur mon <span  class="typedText2"></span></h5>
+                </div>
+                <div class="featured-text-info">
+                    <p>Ici, je partage mes réflexions, mes projets et mes découvertes 
+                        dans le domaine du développement d'applications. Que vous soyez 
+                        passionné de technologie ou simplement curieux, j'espère que vous 
+                        trouverez des articles inspirants et utiles. Suivez-moi dans mon parcours 
+                        d'apprentissage et de création, où je partage des conseils, des tutoriels, 
+                        et mes expériences en tant que développeur. N'hésitez pas à interagir et à 
+                        partager vos pensées !
+                    </p>
+                </div>
+                <div class="featured-text-btn">
+                    <button onclick="aboutMe()" class="btn blue-btn">Plus sur moi</button>
+                </div>
+            </div>
+
+            <div class="featured-image">
+                <div class="image">
+                    <img src="assets/image/avatar.png" alt="avatar">
+                </div>
+            </div>
+        </section>
+
+        <!----------------------- PROJECT BOX -------------------->
+        <section class="section" id="projects">
+            <div id="project-container" class="project-card">
+                <!-- Card 1 -->
+                <div *ngFor="let project of projects" class="card-box">
+                    <img [src]="project.image" alt="Project Image" class="project-image">
+                    <span>{{ project.category }}</span>
+                    <p>{{ project.title }}</p>
+                    <h4>{{ project.description }}</h4>
+                    <button class="full-width-btn">{{ project.buttonText }}</button>
+                  </div>
+            </div>
+            
+        </section>
+
+
+    </div>
+
+
+
+    <!-------------- TYPING JS Link  ---------------->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-------------- SCROLL REVEAL JS Link  ---------------->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</body>

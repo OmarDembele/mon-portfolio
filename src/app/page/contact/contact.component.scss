@@ -1,0 +1,230 @@
+/* -------- WRAPPER DESIGN -------- */
+
+.container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*----------------- CONTACT BOX ----------------*/
+
+.top-header{
+    margin-top: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.top-header h1{
+    font-weight: 600;
+    color: var(--text-color-second);
+}
+
+.top-header span{
+    color: #999;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color-second);
+    margin-bottom: 2%;
+
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+}
+
+.col{
+    display: flex;
+    width: 50%;
+}
+
+.contact-info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 315px;
+    background-color: var(--second-color);
+    border-radius: 10px;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    overflow: hidden;
+}
+
+.contact-info>h2{
+    color: var(--color-white);
+    margin-bottom: 8%;
+}
+
+.contact-info>p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-white);
+    margin-block: 5px;
+}
+
+.contact-info p>i{
+    font-size: 18px;
+}
+
+.contact-info::after{
+    background: var(--color-white);
+}
+
+.contact-info:hover.contact-info h2,
+.contact-info:hover.contact-info p,
+.contact-info:hover.contact-info i{
+    color: black;
+    z-index: 2;
+}
+
+/*----------------- CONTACT FORM ----------------*/
+.form-control{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.form-inputs{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.input-field{
+    width: 50%;
+    height: 55px;
+    background: transparent;
+    border: 1px solid #AAA;
+    border-radius: 10px;
+    padding-inline: 20px;
+    outline: none;
+}
+
+textarea{
+    width: 100%;
+    height: 250px;
+    background: transparent;
+    border: 1px solid #AAA;
+    border-radius: 10px;
+    padding: 3% 4%;
+    outline: none;
+}
+
+.form-button>.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--second-color);
+    color: var(--color-white);
+}
+
+.form-button>.btn:hover{
+    background: var(--second-color);
+}
+
+.form-button i{
+    font-size: 18px;
+}
+
+/* -------- GLOBAL BUTTON DESIGN -------- */
+
+.btn {
+    font-weight: 500;
+    padding: 12px 20px;
+    background: #efefef;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn>i{
+    margin-left: 0%;
+}
+
+.btn:hover {
+    background: var(--second-color);
+    color: var(--color-white);   
+}
+
+i{
+    font-size: 16px;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 220px ) and (max-width: 600px ) {
+
+    /* -------- WRAPPER DESIGN -------- */
+
+    .container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /*----------------- CONTACT BOX ----------------*/
+    
+    .row{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 50px;
+    }
+
+    .col{
+        margin-top: 5%;
+        display: flex;
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (min-width: 601px ) and (max-width: 768px ) {
+
+    /* -------- WRAPPER DESIGN -------- */
+
+    .container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    /*----------------- CONTACT BOX ----------------*/
+    
+    .row{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 30px;
+    }
+    
+    .col{
+        display: flex;
+        width: 60%;
+    }
+
+}

@@ -1,0 +1,24 @@
+[
+    {
+      "image": "assets/image/hello.jpg",
+      "category": "News",
+      "title": "Bienvenue sur un blog dédié à l'univers de la technologie",
+      "description": "Hello",
+      "buttonText": "Voir plus"
+    },
+    {
+      "image": "assets/image/become_dev.jfif",
+      "category": "Programming",
+      "title": "Devenir un développeur front-end",
+      "description": "Dans l'univers dynamique et en constante évolution de la technologie",
+      "buttonText": "Voir plus"
+    },
+    {
+      "image": "assets/image/flutter.jfif",
+      "category": "Programming",
+      "title": "Devenir un développeur front-end",
+      "description": "Dans l'univers dynamique et en constante évolution de la technologie",
+      "buttonText": "Voir plus"
+    }
+  ]
+  

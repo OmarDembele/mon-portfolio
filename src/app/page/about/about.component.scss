@@ -1,0 +1,211 @@
+/* -------- WRAPPER DESIGN -------- */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* -------- GLOBAL BUTTON DESIGN -------- */
+
+.btn {
+    font-weight: 500;
+    padding: 12px 20px;
+    background: #efefef;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn>i{
+    margin-left: 0%;
+}
+
+.btn:hover {
+    background: var(--second-color);
+    color: var(--color-white);   
+}
+
+i{
+    font-size: 16px;
+}
+
+
+/*----------------- ABOUT BOX ----------------*/
+
+.top-header{
+    margin-top: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.top-header h1{
+    font-weight: 600;
+    color: var(--text-color-second);
+}
+
+.top-header span{
+    color: #999;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color-second);
+    margin-bottom: 2%;
+
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+}
+
+.col{
+    display: flex;
+    width: 50%;
+}
+
+/*---------- ABOUT INFO ------------------*/
+.about-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 30px 70px;
+    padding-inline: 20px;
+    background: var(--color-white); 
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    border-radius: 20px;
+}
+
+.about-info p{
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.about-btn{
+    margin-top: 2%;
+}
+
+.about-btn button{
+    position: absolute;
+    right: 6%;
+    bottom: 6%;
+    background: var(--first-color);
+    color: var(--color-white);
+    border-radius: 20px;
+}
+
+
+.about-btn button:hover{
+    background: var(--first-color-hover);
+
+}
+
+.skills-box{
+    margin: 3%;
+}
+
+.skills-header{
+    margin-bottom: 10%;
+}
+
+.skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.skills-list span{
+    font-size: 14px;
+    background: var(--second-color);
+    color: var(--color-white);
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+
+
+@media only screen and (min-width: 220px ) and (max-width: 600px ) {
+
+    /* -------- WRAPPER DESIGN -------- */
+
+    .container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /*----------------- CONTACT BOX ----------------*/
+    
+    .row{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 50px;
+    }
+
+    .col{
+        margin-top: 5%;
+        display: flex;
+        width: 100%;
+    }
+
+    .skills-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+}
+
+
+@media only screen and (min-width: 601px ) and (max-width: 768px ) {
+
+    /* -------- WRAPPER DESIGN -------- */
+
+    .container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    /*----------------- CONTACT BOX ----------------*/
+    
+    .row{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 30px;
+    }
+    
+    .col{
+        display: flex;
+        width: 60%;
+    }
+
+    .skills-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+}

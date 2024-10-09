@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio-omar';
+
+  isMenuActive: boolean = false;
+
+  onMenuToggle(isActive: boolean) {
+    this.isMenuActive = isActive; // Met à jour l'état du menu
+    console.log(isActive)
+  }
+
 }

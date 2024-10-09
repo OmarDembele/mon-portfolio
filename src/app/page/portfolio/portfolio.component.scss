@@ -1,0 +1,898 @@
+/* -------- WRAPPER DESIGN -------- */
+
+.container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+/* -------- FEATURED BOX -------- */
+.featured-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* -------- FEATURED TEXT BOX -------- */
+.featured-text{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    min-height: 80vh;
+    width: 90%;
+    padding-left: 5%;
+}
+
+.featured-text-card{
+    background: var(--second-color);
+    color: var(--color-white);
+    padding: 2%;
+    font-size: 10px;
+    border-radius: 5px;
+}
+
+.featured-name{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--text-color-second);
+    margin: 20;
+}
+
+.typedText{
+    text-transform: capitalize;
+    color: var(--text-color-third);
+}
+
+p span{
+    color: var(--text-color-third);
+}
+
+.featured-text-info{
+    font-size: 15px;
+    margin-bottom: 5%;
+    color: var(--text-color-second);
+}
+
+.featured-text-btn {
+    display: flex;
+    gap: 20px;
+}
+
+.featured-text-btn>.blue-btn {
+    background: var(--first-color);
+    color: var(--color-white);
+}
+
+.featured-text-btn>.blue-btn:hover {
+    background: var(--first-color-hover);
+}
+
+.socials_icons{
+    display: flex;
+    margin-top: 2em;
+    gap: 30px;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+
+.icon:hover{
+    background: var(--second-color);
+}
+
+/*----------------FEATURED IMAGE BOX --------- */
+
+.featured-image{
+    display: flex;
+    justify-content: right;
+    width: 50%;
+    padding-right: 2%;
+}
+
+.image{
+    margin: auto 0;
+    border-radius: 40% 40% 47% 47%;
+    overflow: hidden;
+    animation: imgFloat 7s ease-in-out infinite;
+}
+
+@keyframes imgFloat {
+    50%{
+        transform: translateY(10px);
+        border-radius: 45% 55% 45% 55%;
+    }
+}
+
+.scroll-btn{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    translate: -50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 7%;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--text-color-second);
+    background: var(--color-white);
+    border-radius: 30px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.scroll-btn i{
+    font-size: 20px;
+}
+
+/*--------------- Data  -----------------------*/
+
+.project-card1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 300px;
+    margin-top: 3%;
+}
+
+.card-box1 img {
+    border-radius: 10px 10px 0 0;
+}
+
+.card-box1 span {
+    margin-top: 5%;
+    font-family: none;
+    font-weight: normal;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--second-color);
+}
+
+.card-box1 h3 {
+    padding: 3%;
+    font-size: 24px;
+}
+
+.card-box1 p {
+    padding: 1%;
+    color: black;
+    font-weight: 600;
+}
+
+.card-box1 h4 {
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 8%;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.card-box1 .btn {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card-box1 .full-width-btn:hover {
+    background: var(--second-color);
+}
+
+.project-image {
+    width: 100%;
+    height: 120px;
+    max-height: 250px; /* Limiter la hauteur maximale de l'image */
+    object-fit: cover; /* Garde l'image proportionnelle tout en la rognant si nécessaire */
+}
+  
+
+.full-width-btn {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+    background-color: white;
+    font-weight: 600;
+    color: black;
+    border: none;
+    border-radius: 0 0 8px 8px; /* Rounded corners for the bottom */
+    text-align: center;
+    cursor: pointer;
+}
+
+/* -------- GLOBAL BUTTON DESIGN -------- */
+
+.btn {
+    font-weight: 500;
+    padding: 12px 20px;
+    background: #efefef;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn>i{
+    margin-left: 0%;
+}
+
+.btn:hover {
+    background: var(--second-color);
+    color: var(--color-white);   
+}
+
+i{
+    font-size: 16px;
+}
+
+/*----------------- CONTACT BOX ----------------*/
+
+.top-header{
+    margin-top: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.top-header h1{
+    font-weight: 600;
+    color: var(--text-color-second);
+}
+
+.top-header span{
+    color: #999;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color-second);
+    margin-bottom: 2%;
+
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+}
+
+.col{
+    display: flex;
+    width: 50%;
+}
+
+.contact-info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 315px;
+    background-color: var(--second-color);
+    border-radius: 10px;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    overflow: hidden;
+}
+
+.contact-info>h2{
+    color: var(--color-white);
+    margin-bottom: 8%;
+}
+
+.contact-info>p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-white);
+    margin-block: 5px;
+}
+
+.contact-info p>i{
+    font-size: 18px;
+}
+
+.contact-info::after{
+    background: var(--color-white);
+}
+
+.contact-info:hover.contact-info h2,
+.contact-info:hover.contact-info p,
+.contact-info:hover.contact-info i{
+    color: black;
+    z-index: 2;
+}
+
+/*----------------- CONTACT FORM ----------------*/
+.form-control{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.form-inputs{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.input-field{
+    width: 50%;
+    height: 55px;
+    background: transparent;
+    border: 1px solid #AAA;
+    border-radius: 10px;
+    padding-inline: 20px;
+    outline: none;
+}
+
+textarea{
+    width: 100%;
+    height: 250px;
+    background: transparent;
+    border: 1px solid #AAA;
+    border-radius: 10px;
+    padding: 3% 4%;
+    outline: none;
+}
+
+.form-button>.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--second-color);
+    color: var(--color-white);
+}
+
+.form-button>.btn:hover{
+    background: var(--second-color);
+}
+
+.form-button i{
+    font-size: 18px;
+}
+
+/*----------------- ABOUT BOX ----------------*/
+
+.top-header{
+    margin-top: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.top-header h1{
+    font-weight: 600;
+    color: var(--text-color-second);
+}
+
+.top-header span{
+    color: #999;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color-second);
+    margin-bottom: 2%;
+
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+}
+
+.col{
+    display: flex;
+    width: 50%;
+}
+
+/*---------- ABOUT INFO ------------------*/
+.about-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 30px 70px;
+    padding-inline: 20px;
+    background: var(--color-white); 
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    border-radius: 20px;
+}
+
+.about-info p{
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.about-btn{
+    margin-top: 2%;
+}
+
+.about-btn button{
+    position: absolute;
+    right: 6%;
+    bottom: 6%;
+    background: var(--first-color);
+    color: var(--color-white);
+    border-radius: 20px;
+}
+
+
+.about-btn button:hover{
+    background: var(--first-color-hover);
+
+}
+
+.skills-box{
+    margin: 3%;
+}
+
+.skills-header{
+    margin-bottom: 10%;
+}
+
+.skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.skills-list span{
+    font-size: 14px;
+    background: var(--second-color);
+    color: var(--color-white);
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 220px ) and (max-width: 600px ) {
+
+    /* -------- WRAPPER DESIGN -------- */
+
+    .container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+     /* -------- FEATURED BOX -------- */
+     .featured-box{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+    /* -------- FEATURED TEXT BOX -------- */
+    .featured-text{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        min-height: 60vh;
+        width: 90%;
+        padding-left: 5%;
+    }
+
+    h5{
+        font-size: 28px; 
+    }
+
+    h5 span{
+        font-size: 28px;
+        color: var(--text-color-third);
+    }
+
+    /*----------------FEATURED IMAGE BOX --------- */
+
+    .featured-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .image{
+        margin: auto 0;
+        border-radius: 30% 0% 37% 37%;
+        overflow: hidden;
+        animation: imgFloat 7s ease-in-out infinite;
+    }
+
+    @keyframes imgFloat {
+        50%{
+            transform: translateY(2px);
+            border-radius: 35% 5% 35% 35%;
+        }
+    }
+
+    .scroll-btn{
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        translate: -50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        height: 7%;
+        gap: 5px;
+        text-decoration: none;
+        color: var(--text-color-second);
+        background: var(--color-white);
+        border-radius: 30px;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .scroll-btn i{
+        font-size: 20px;
+    }
+
+
+    /*--------------- Data  -----------------------*/
+
+    .project-card1 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .card-box1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        background-color: var(--color-white);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        width: 420px;
+        margin-top: 5%;
+    }
+
+    .card-box1 img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card-box1 span {
+        margin-top: 5%;
+        font-family: none;
+        font-weight: normal;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--second-color);
+    }
+
+    .card-box1 h3 {
+        padding: 3%;
+        font-size: 24px;
+    }
+
+    .card-box1 p {
+        padding: 1%;
+        color: black;
+        font-weight: 600;
+    }
+
+    .card-box1 h4 {
+        text-align: center;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 8%;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .card-box1 .btn {
+        background-color: #007BFF;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .card-box1 .full-width-btn:hover {
+        background: var(--second-color);
+    }
+
+    .project-image {
+        width: 100%;
+        height: 120px;
+        max-height: 250px; /* Limiter la hauteur maximale de l'image */
+        object-fit: cover; /* Garde l'image proportionnelle tout en la rognant si nécessaire */
+    }
+    
+
+    .full-width-btn {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 100%;
+        background-color: white;
+        font-weight: 600;
+        color: black;
+        border: none;
+        border-radius: 0 0 8px 8px; /* Rounded corners for the bottom */
+        text-align: center;
+        cursor: pointer;
+    }
+
+    /*----------------- CONTACT BOX ----------------*/
+    
+    .row{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 50px;
+    }
+
+    .col{
+        margin-top: 5%;
+        display: flex;
+        width: 100%;
+    }
+
+    .skills-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+}
+
+
+@media only screen and (min-width: 601px ) and (max-width: 768px ) {
+
+    /* -------- WRAPPER DESIGN -------- */
+
+    .container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+     /* -------- FEATURED BOX -------- */
+     .featured-box{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+    /* -------- FEATURED TEXT BOX -------- */
+    .featured-text{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        min-height: 60vh;
+        width: 90%;
+        padding-left: 5%;
+    }
+
+    h5{
+        font-size: 28px; 
+    }
+
+    h5 span{
+        font-size: 28px;
+        color: var(--text-color-third);
+    }
+
+    /*----------------FEATURED IMAGE BOX --------- */
+
+    .featured-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .image{
+        margin: auto 0;
+        border-radius: 30% 0% 37% 37%;
+        overflow: hidden;
+        animation: imgFloat 7s ease-in-out infinite;
+    }
+
+    @keyframes imgFloat {
+        50%{
+            transform: translateY(2px);
+            border-radius: 35% 5% 35% 35%;
+        }
+    }
+
+    .scroll-btn{
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        translate: -50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        height: 7%;
+        gap: 5px;
+        text-decoration: none;
+        color: var(--text-color-second);
+        background: var(--color-white);
+        border-radius: 30px;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .scroll-btn i{
+        font-size: 20px;
+    }
+
+
+    /*--------------- Data  -----------------------*/
+
+    .project-card1 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .card-box1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        background-color: var(--color-white);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        width: 450px;
+        margin-top: 5%;
+    }
+
+    .card-box1 img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card-box1 span {
+        margin-top: 5%;
+        font-family: none;
+        font-weight: normal;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--second-color);
+    }
+
+    .card-box1 h3 {
+        padding: 3%;
+        font-size: 24px;
+    }
+
+    .card-box1 p {
+        padding: 1%;
+        color: black;
+        font-weight: 600;
+    }
+
+    .card-box1 h4 {
+        text-align: center;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 8%;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .card-box1 .btn {
+        background-color: #007BFF;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .card-box1 .full-width-btn:hover {
+        background: var(--second-color);
+    }
+
+    .project-image {
+        width: 100%;
+        height: 120px;
+        max-height: 250px; /* Limiter la hauteur maximale de l'image */
+        object-fit: cover; /* Garde l'image proportionnelle tout en la rognant si nécessaire */
+    }
+    
+
+    .full-width-btn {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 100%;
+        background-color: white;
+        font-weight: 600;
+        color: black;
+        border: none;
+        border-radius: 0 0 8px 8px; /* Rounded corners for the bottom */
+        text-align: center;
+        cursor: pointer;
+    }
+
+    /*----------------- CONTACT BOX ----------------*/
+    
+    .row{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 50px;
+    }
+
+    .col{
+        margin-top: 5%;
+        display: flex;
+        width: 100%;
+    }
+
+    .skills-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+}

@@ -1,0 +1,36 @@
+
+<header id="header">
+    <nav class="navbar">
+      <a routerLink="/" class="nav-logo">DEMBELE.</a>
+  
+      <ul class="nav-menu" [ngClass]="{'active': isMenuActive}">
+        <li class="nav-item">
+          <a routerLink="/" class="nav-link" (click)="closeMenu()">Home</a>
+          <div class="circle"></div>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/portfolio" class="nav-link" (click)="closeMenu()">Portfolio</a>
+          <div class="circle"></div>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/about" class="nav-link" (click)="closeMenu()">About</a>
+          <div class="circle"></div>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/contact" class="nav-link" (click)="closeMenu()">Contact</a>
+          <div class="circle"></div>
+        </li>
+      </ul>
+  
+      <div class="nav-button">
+        <button class="btn">Mon CV <i class="uil uil-file-alt"></i></button>
+      </div>
+  
+      <div class="hamburger" (click)="toggleMenu()" [ngClass]="{'active': isMenuActive}">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  
