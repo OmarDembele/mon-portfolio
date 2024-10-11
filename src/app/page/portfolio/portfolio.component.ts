@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class PortfolioComponent {
 
+  downloadCV() {
+    const link = document.createElement('a');
+    link.href = 'assets/pdf/cv.pdf';
+    link.download = 'mon_cv.pdf'; // Vous pouvez spécifier un nom de fichier ici
+    link.click();
+  }
 }

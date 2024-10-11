@@ -19,5 +19,9 @@ export class NavbarComponent {
     this.isMenuActive = false; // Ferme le menu
     this.menuToggle.emit(this.isMenuActive); // Émet l'état mis à jour vers le composant parent
   }
+
+  openCV() {
+    window.open('assets/pdf/cv.pdf', '_blank');
+  }
   
 }
