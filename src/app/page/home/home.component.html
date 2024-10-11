@@ -42,8 +42,8 @@
                     <span>{{ project.category }}</span>
                     <p>{{ project.title }}</p>
                     <h4>{{ project.description }}</h4>
-                    <button class="full-width-btn">{{ project.buttonText }}</button>
-                  </div>
+                    <button class="full-width-btn" [routerLink]="['/details', project.id]">{{ project.buttonText }}</button>
+                </div>
             </div>
             
         </section>

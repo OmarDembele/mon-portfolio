@@ -1,0 +1,25 @@
+<div class="container">
+    <section class="detail-box" id="details">
+      <div *ngIf="pageData" class="detail-text">
+        <p class="detail-title">BY <span class="user">{{ pageData.user }}</span> IN <span class="category">{{ pageData.category }}</span><span class="date"> - {{ pageData.date }}</span></p>
+        <h1>{{ pageData.title }}</h1>
+        <img [src]="pageData.image" alt="Project Image" class="project-image">
+      
+        <!-- Boucle sur les détails (sous-titres et descriptions) avec l'index pour numéroter -->
+        <div *ngFor="let detail of pageData.details; let i = index" class="detail-text">
+          <h3>{{ i + 1 }}. {{ detail.subTitle }}</h3>
+          <p [innerHTML]="formatDescription(detail.description)"></p>
+        </div>
+
+        <!-- Boutons Précédent et Suivant -->
+        <div class="navigation-buttons">
+          <button class="btn left-button" *ngIf="previousProject" (click)="navigateToProject(previousProject.id)">Précédent: {{ previousProject.title }}</button>
+          <button class="btn right-button" *ngIf="nextProject" (click)="navigateToProject(nextProject.id)">Suivant: {{ nextProject.title }}</button>
+        </div>
+      </div>
+        
+      <div *ngIf="!pageData">
+        <p>Projet non trouvé.</p>
+      </div>
+    </section>
+</div>

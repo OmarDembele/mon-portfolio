@@ -10,6 +10,7 @@ import { AboutComponent } from './page/about/about.component';
 import { ContactComponent } from './page/contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DetailsComponent } from './page/details/details.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     PortfolioComponent,
     AboutComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
