@@ -83,7 +83,7 @@ a{
 }
 
 .nav-link:hover{
-    padding: 20%;
+    padding: 10px;
     border-radius: 20px;
     background: var(--second-color);
     color: var(--color-white) ; 
@@ -143,6 +143,14 @@ i{
 /*----------------MEDIA QUERY == 768px / RESPONSIVE---------- */
 
 @media (max-width: 768px) {
+
+    .nav-link:hover{
+        padding: 18px;
+        border-radius: 20px;
+        background: var(--second-color);
+        color: var(--color-white) ; 
+    }
+
     .hamburger {
         display: block;
     }
