@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { ProjectService } from 'src/app/services/project.service';
 import Typed from 'typed.js';
 
@@ -8,6 +8,7 @@ import Typed from 'typed.js';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements AfterViewInit {
+  @ViewChild('projectsSection') projectsSection!: ElementRef;
 
   projects: any[] = [];
 
@@ -30,5 +31,9 @@ export class HomeComponent implements AfterViewInit {
     };
 
     const typedSecondary = new Typed('.typedText2', optionsSecondary);
+  }
+
+  aboutMe() {
+    this.projectsSection.nativeElement.scrollIntoView({ behavior: 'smooth' });
   }
 }

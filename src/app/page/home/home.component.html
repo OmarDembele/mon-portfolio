@@ -22,7 +22,7 @@
                     </p>
                 </div>
                 <div class="featured-text-btn">
-                    <button onclick="aboutMe()" class="btn blue-btn">Plus sur moi</button>
+                    <button (click)="aboutMe()" class="btn blue-btn">Plus sur moi</button>
                 </div>
             </div>
 
@@ -34,7 +34,7 @@
         </section>
 
         <!----------------------- PROJECT BOX -------------------->
-        <section class="section" id="projects">
+        <section class="section" id="projects" #projectsSection>
             <div id="project-container" class="project-card">
                 <!-- Card 1 -->
                 <div *ngFor="let project of projects" class="card-box">
