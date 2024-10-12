@@ -9,6 +9,78 @@
     margin-right: 5%;
 }
 
+
+/* -------- FEATURED BOX -------- */
+.featured-box {
+    margin-top: 4%;
+    display: flex;               /* Aligne les enfants (texte et image) sur une même ligne */
+    align-items: center;         /* Centre le contenu verticalement */
+    justify-content: space-between; /* Ajoute de l'espace entre le texte et l'image */
+    gap: 30px;
+  }
+
+  /* -------- FEATURED TEXT BOX -------- */
+  
+  .featured-text {
+    width: 70%;
+  }
+
+.featured-text-card{
+    width: 30%;
+    background: var(--second-color);
+    color: var(--color-white);
+    padding: 2%;
+    font-size: 10px;
+    border-radius: 5px;
+}
+
+.featured-name{
+    text-align: start;
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--text-color-second);
+    margin: 0;
+}
+
+.typedText{
+    text-transform: capitalize;
+    color: var(--text-color-third);
+}
+
+p span{
+    color: var(--text-color-third);
+}
+
+.featured-text-info{
+    text-align: start;
+    font-size: 15px;
+    margin-bottom: 5%;
+    color: var(--text-color-second);
+}
+
+.featured-text-btn {
+    display: flex;
+    gap: 20px;
+}
+
+.featured-text-btn>.blue-btn {
+    background: var(--first-color);
+    color: var(--color-white);
+}
+
+.featured-text-btn>.blue-btn:hover {
+    background: var(--first-color-hover);
+}
+
+/*----------------FEATURED IMAGE BOX --------- */
+
+  .featured-image .image img {
+    width: 400px;                /* Ajustez la taille de l'image selon vos besoins */
+    height: 400px;
+    border-radius: 50%;          /* Rend l'image circulaire */
+    object-fit: cover;           /* Ajuste l'image pour qu'elle remplisse le conteneur sans déformation */
+  }
+
 /* -------- GLOBAL BUTTON DESIGN -------- */
 
 .btn {
@@ -37,21 +109,6 @@ i{
 
 /*----------------- ABOUT BOX ----------------*/
 
-.top-header{
-    margin-top: 2em;
-    text-align: center;
-    margin-bottom: 2em;
-}
-
-.top-header h1{
-    font-weight: 600;
-    color: var(--text-color-second);
-}
-
-.top-header span{
-    color: #999;
-}
-
 h3{
     font-size: 20px;
     font-weight: 600;
@@ -61,6 +118,7 @@ h3{
 }
 
 .row{
+    margin-top: 2%;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -69,25 +127,41 @@ h3{
 
 .col{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 50%;
+    margin-bottom: 2%;
 }
 
 /*---------- ABOUT INFO ------------------*/
 .about-info {
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-block: 30px 70px;
-    padding-inline: 20px;
+    padding-block: 30px 30px;
+    padding-inline: 40px;
     background: var(--color-white); 
-    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    box-shadow: 2px 8px 25px 2px var(--first-shadow-color);
     border-radius: 20px;
 }
 
 .about-info p{
     text-align: center;
     font-size: 15px;
+}
+
+.about-info h3{
+    color: var(--second-color);
+}
+
+.about-info:hover{
+    background: var(--second-color);
+    h3{
+        color: black;
+    }
 }
 
 
@@ -107,11 +181,22 @@ h3{
 
 .about-btn button:hover{
     background: var(--first-color-hover);
+}
 
+.row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.col1{
+    display: block;
+    width: 65%;
 }
 
 .skills-box{
-    margin: 3%;
+    margin: 0%;
 }
 
 .skills-header{
@@ -132,6 +217,12 @@ h3{
     border-radius: 5px;
 }
 
+li{
+    list-style-type: disc;
+    padding: 0.5em;
+    text-align: center;
+}
+
 
 
 @media only screen and (min-width: 220px ) and (max-width: 600px ) {
@@ -144,6 +235,29 @@ h3{
         align-items: center;
         text-align: center;
     }
+
+    /* -------- FEATURED BOX -------- */
+    .featured-box {
+        margin-top: 4%;
+        display: block;               /* Aligne les enfants (texte et image) sur une même ligne */
+        align-items: center;         /* Centre le contenu verticalement */
+        justify-content: center; /* Ajoute de l'espace entre le texte et l'image */
+    }
+
+    /* -------- FEATURED TEXT BOX -------- */
+    
+    .featured-text {
+        width: 100%;
+    }
+
+    /*----------------FEATURED IMAGE BOX --------- */
+
+  .featured-image .image img {
+    width: 400px;                /* Ajustez la taille de l'image selon vos besoins */
+    height: 400px;
+    border-radius: 50%;          /* Rend l'image circulaire */
+    object-fit: cover;           /* Ajuste l'image pour qu'elle remplisse le conteneur sans déformation */
+  }
 
     /*----------------- CONTACT BOX ----------------*/
     
@@ -169,6 +283,20 @@ h3{
         gap: 5px;
     }
 
+    .row1{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 50px;
+    }
+    
+    .col1{
+        margin-top: 5%;
+        display: flex;
+        width: 100%;
+    }
+
 }
 
 
@@ -186,18 +314,57 @@ h3{
         margin-right: 3%;
     }
 
+    /* -------- FEATURED BOX -------- */
+    .featured-box {
+        margin-top: 4%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* -------- FEATURED TEXT BOX -------- */
+    
+    .featured-text {
+        width: 100%;
+    }
+
+    /*----------------FEATURED IMAGE BOX --------- */
+
+  .featured-image .image img {
+    width: 400px;                /* Ajustez la taille de l'image selon vos besoins */
+    height: 400px;
+    border-radius: 50%;          /* Rend l'image circulaire */
+    object-fit: cover;           /* Ajuste l'image pour qu'elle remplisse le conteneur sans déformation */
+  }
+
     /*----------------- CONTACT BOX ----------------*/
     
     .row{
-        display: flex;
-        justify-content: space-between;
+        display: block;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        gap: 30px;
+        gap: 50px;
+    }
+
+    .col{
+        margin-top: 5%;
+        display: flex;
+        width: 100%;
+    }
+
+    .row1{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 50px;
     }
     
-    .col{
+    .col1{
+        margin-top: 5%;
         display: flex;
-        width: 60%;
+        width: 100%;
     }
 
     .skills-list{
