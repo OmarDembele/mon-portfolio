@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import { ProjectService } from 'src/app/services/project.service';
 import Typed from 'typed.js';
 
@@ -21,7 +21,6 @@ export class HomeComponent implements AfterViewInit {
   }
 
   ngAfterViewInit() {
-
     const optionsSecondary = {
       strings: ["Blog !", ""],
       loop: true,
